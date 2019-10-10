@@ -1,0 +1,61 @@
+lorem = " Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. " \
+        "Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. " \
+        "Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym." \
+        " Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum," \
+        " a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker"
+
+imie = "Mateusz"
+nazwisko = "Gotowicki"
+litera_1 = imie[2]
+litera_2 = nazwisko[3]
+#print(lorem.count(litera_1))
+print("W tekście jest " + str(lorem.count(litera_1)) + " liter " + litera_1 + " oraz " + str(lorem.count(litera_2)) + " liter " + litera_2)
+ja = "Mateusz Gotowicki"
+print(imie[::-1]+ " "+ nazwisko[::-1])
+lista=[1,2,3,4,5,6,7,8,9,10]
+lista2= lista[0:5]
+del lista[5:10];
+print(lista);
+print(lista2);
+lista3 = lista+lista2
+lista3.insert(0,0)
+lista4 = lista3.copy()
+lista4.reverse()
+print(lista3)
+print(lista4)
+krotka1=(141122, 'Pogo')
+krotka2=(141077, 'Gajus')
+krotka3=(145577, 'Mebos')
+lista_krotek=[krotka1, krotka2, krotka3]
+print(lista_krotek)
+slownik=dict(lista_krotek)
+print(lista_krotek)
+numery = [503577966, 123987654, 888999666, 7774455588, 111223366]
+numery_2 = list(set(numery))
+print(numery_2)
+x = range(1, 11);
+for n in x:
+    print(n)
+x = range(100, 20, -5);
+for n in x:
+    print(n);
+
+slowniki = [{"abc": 1, "bc": "Mati"}, {"Auto": 5, "Bartosz": 10}, {"telefon": 1, 2: "komorkowy"}]
+napis = ""
+for x in slowniki:
+    for y in x.keys():
+        napis += str(x[y]) + " "
+print(napis)
+
+
+
+
+Zadanie 3
+
+print('%f' % (3.141592653589793))
+print('{:4d}'.format(42))
+print('{:=5d}'.format((- 23)))
+data = {'first': 'Hodor', 'last': 'Hodor!'}
+print('{first} {last}'.format(**data))
+print('{} {}'.format('one', 'two'))
+
