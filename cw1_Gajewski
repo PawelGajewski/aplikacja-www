@@ -1,1 +1,60 @@
+#zad1
+lorem = "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz " \
+        "pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później " \
+        "zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w " \
+        "latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z" \
+        " zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach " \
+        "osobistych, jak Aldus PageMaker"
+#zad2
+imie = "Paweł"
+nazwisko = "Gajewski"
+litera_1 = imie[2]
+litera_2 = nazwisko[3]
+print("W tekście jest " + str(lorem.count(litera_1)) + " liter " + litera_1 + " oraz " + str(lorem.count(litera_2)) + " liter " + litera_2 +".""")
+#zad4
+print(dir("Aezakmi"))
+help(nazwisko.count("w"))
+#zad5
+ja = "Paweł Gajewski"
+print(imie[::-1] + " " + nazwisko[::-1])
+#zad6
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista2 = lista[5:]
+del lista[5:]
+print(lista2)
+print(lista)
+#zad7
+lista3 = lista+lista2
+print(lista3)
+x=[0]
+lista3 = x + lista3
+print(lista3)\
+#zad8
+lista_krotek = [(222333, "Andrzej Mleczko"), (222444, "Bartek Bąk"), (555444, "Wojtek Krasny")]
+print(lista_krotek)
+#zad9
+slownik=dict(lista_krotek)
+print(lista_krotek)
+#zad10
+nr = [2342342423, 5657567566, 456455465546, 34534544, 3454234423, 2312312312, 12312312312]
+nr = set(nr)
+print(nr)
+#zad11
+abc = []
+for x in range(1, 11):
+    abc.append(x)
+print(abc)
+# 12
+xyz = []
+for x in reversed(range(20, 101, 5)):
+    print(x)
+    xyz.append(x)
+#13
+list_dicts = [{"asdad": 1, "asdsa": "asddasd"}, {"asdasds": 234, "dfsdfds": 2342343}, {"sdfsdf": 3123, 23123: "dsfsdfsd"}]
+output = ""
+for x in list_dicts:
+    for y in x.keys():
+        output += str(x[y]) + " "
+print(output)
+
 
